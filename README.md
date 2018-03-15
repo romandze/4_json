@@ -1,17 +1,26 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Делаем читаемый json
 
 # Quickstart
 
-[TODO]
+На входе передаём скрипту не форматированный json
+На выходе получаем отформатированный json, число пробелов равно 4.
 
 Example of script launch on Linux, Python 3.5:
 
 ```bash
 
 $ python pprint_json.py <path to file>
-# TODO add output example
+
+{
+    "test": [
+        {
+            {
+            }
+        }
+     ]
+}
 
 ```
 
