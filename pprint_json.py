@@ -10,13 +10,11 @@ def load_data():
             return json_data
         except IOError:
             print("А нет такого файла")
-            sys.exit()
     else:
         print("Ты забыл указать файл JSON")
-        sys.exit()
 
-def pretty_print_json(data):
-    pretty_json = json.dumps(data, sort_keys=True, indent=4)
+def pretty_print_json(data_from_file):
+    pretty_json = json.dumps(data_from_file, sort_keys=True, indent=4)
     return pretty_json
 
 if __name__ == '__main__':
