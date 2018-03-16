@@ -20,8 +20,8 @@ if __name__ == '__main__':
             try:
                 print(pretty_generate_json(load_data(filepath)))
             except json.decoder.JSONDecodeError:
-                print("Это был не JSON")
+                print('Это был не JSON')
         except IOError:
-            print("А нет такого файла")
+            print('А нет такого файла')
     else:
-        print("Ты забыл указать файл JSON")
+        print('Ты забыл указать файл JSON')
